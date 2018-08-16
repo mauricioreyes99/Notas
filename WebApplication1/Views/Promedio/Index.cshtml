@@ -1,0 +1,133 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+<script src="~/Scripts/Rangos.js"></script>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-2"></div>
+        
+            
+            
+               
+                <form action="/" method="post">
+
+                    <div class="row">
+                        <div class="form-group">
+                            <div class="col-sm-6">
+                                <label for="resultado" class="control-label">Nombre completo</label>
+                                <input type="text" required class="form-control" name="nombre" value="" />
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-6">
+                                    <label for="resultado" class="control-label">Grado que cursa</label>
+                                    <input type="text" required class="form-control" name="grado" value="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br />
+                    <div class="col-sm-3">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">Notas Lenguaje</div>
+                            <div class="panel-body">
+                                <div class="form-group has-success">
+                                    
+                                    
+                                        <label for="resultado"  class="control-label">Nota 1</label>
+                                        <input type="text" id="a" oninput="Rango1(this);" required class="form-control" name="Lnota1" value="" />
+                                  
+                                    
+                                        <label for="resultado"  class="control-label">Nota 2</label>
+                                        <input type="text" required id="b" oninput="Rango2(this);" class="form-control" name="Lnota2" value="" />
+                                   
+                                    
+                                        <label for="resultado"  class="control-label">Nota 3</label>
+                                        <input type="text" id ="c" required oninput="Rango3(this);" class="form-control" name="Lnota3" value="" />
+                                   
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    <div class="col-sm-3">
+                        <div class="panel panel-success">
+                            <div class="panel-heading">Notas Matemática</div>
+                            <div class="panel-body">
+                                <div class="form-group has-success">
+                                   
+                                   
+                                        <label for="resultado"   class="control-label">Nota 1</label>
+                                        <input type="text" required id="d" oninput="Rango4(this);" class="form-control" name="Mnota1" value="" />
+                                    
+                                   
+                                        <label for="resultado"  class="control-label">Nota 2</label>
+                                        <input type="text"  id="e" required oninput="Rango5(this);" class="form-control" name="Mnota2" value="" />
+                                    
+                                    
+                                        <label for="resultado"   class="control-label">Nota 3</label>
+                                        <input type="text" id="f" required oninput="Rango6(this);" class="form-control" name="Mnota3" value="" />
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="panel panel-warning">
+                            <div class="panel-heading">Notas Ciencia</div>
+                            <div class="panel-body">
+                                <div class="form-group has-success">
+                                    
+                                    
+                                        <label for="resultado"  class="control-label">Nota 1</label>
+                                        <input type="text" required oninput="Rango7(this);"  id="g" class="form-control" name="Cnota1" value="" />
+                                    
+                                    
+                                        <label for="resultado"   class="control-label">Nota 2</label>
+                                        <input type="text" required id="h" oninput="Rango8(this);" class="form-control" name="Cnota2" value="" />
+                                    
+                                    
+                                        <label for="resultado"   class="control-label">Nota 3</label>
+                                        <input type="text" required id="i" oninput="Rango9(this);" class="form-control" name="Cnota3" value="" />
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="panel panel-info">
+                            <div class="panel-heading">Notas Tecnología</div>
+                            <div class="panel-body">
+                                <div class="form-group has-success">
+                                    
+                                   
+                                        <label for="resultado"  class="control-label">Nota 1</label>
+                                        <input type="text" required  id="j" oninput="Rango10(this);" class="form-control" name="Tnota1" value="" />
+                                    
+                                    
+                                        <label for="resultado"  class="control-label">Nota 2</label>
+                                        <input type="text" required  id="k" oninput="Rango11(this);" class="form-control" name="Tnota2" value="" />
+                                    
+                                    
+                                        <label for="resultado"   class="control-label">Nota 3</label>
+                                        <input type="text" required id="l" oninput="Rango12(this);" class="form-control" name="Tnota3" value="" />
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <div class="form-group">
+                            <center> <button class="btn btn-lg" type="submit">Calcular</button></center>
+                        </div>
+                </form>
+               
+            
+        </div>
+    </div>
+</div>

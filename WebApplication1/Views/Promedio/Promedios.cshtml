@@ -1,0 +1,100 @@
+﻿
+@{
+    ViewBag.Title = "Promedios";
+}
+
+<h2>Promedios</h2>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+            <div class="panel panel-primary">
+                <div class="panel-heading">CUM Promedios</div>
+                <div class="panel-body">
+                    <form action="/" method="post">
+                        <div class="row">
+                            <div class="form-group">
+                                <label for="nombre" class="control-label col-sm-2">Nombre.</label>
+                                <div class="col-md-4">
+                                    <input type="text" name="nombre" value="@ViewBag.Nombre" placeholder="Nombre estudiante" readonly class="form-control" />
+                                </div>
+                                <label for="grado" class="control-label col-sm-2">Grado.</label>
+                                <div class="col-md-4">
+                                    <input type="text" name="grado" value="@ViewBag.Grado" placeholder="Grado" readonly class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                        <br />
+                        <div class="row">
+                            <div class="form-group">
+                                <label for="name" class="control-label col-sm-2">lenguaje.</label>
+                                <div class="col-md-3">
+                                    <input type="text" name="PromL" value="@ViewBag.PromedioLenguaje" placeholder="Promedio" readonly class="form-control" />
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="text" name="EstadoM" value="@ViewBag.estadoL" placeholder="Estado" readonly class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <br />
+                        <br />
+
+                        <div class="row">
+                            <div class="form-group">
+                                <label for="name" class="control-label col-sm-2">Ciencias.</label>
+                                <div class="col-md-3">
+                                    <input type="text" name="PromC" value="@ViewBag.PromedioCiencias" placeholder="Promedio" readonly class="form-control" />
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="text" name="EstadoM" value="@ViewBag.estadoC" placeholder="Estado" readonly class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <br />
+                        <br />
+
+                        <div class="row">
+                            <div class="form-group">
+                                <label for="name" class="control-label col-sm-2">Tecnologia.</label>
+                                <div class="col-md-3">
+                                    <input type="text" name="PromT" value="@ViewBag.PromedioTecnologia" placeholder="Promedio" readonly class="form-control" />
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="text" name="EstadoM" value="@ViewBag.estadoT" placeholder="Estado" readonly class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <br />
+                        <br />
+
+                        <div class="row">
+                            <div class="form-group">
+                                <label for="name" class="control-label col-sm-2">Matematica.</label>
+                                <div class="col-md-3">
+                                    <input type="text" name="PromT" value="@ViewBag.PromedioMate" placeholder="Promedio" readonly class="form-control" />
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="text" name="EstadoM" value="@ViewBag.estadoM" placeholder="Estado" readonly class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                        <br />
+                        <div class="row">
+                            <div class="form-group">
+                                <label for="name" class="control-label col-sm-2">CUM.</label>
+                                <div class="col-md-4">
+                                    <input type="text" name="Porcentaje" value="@ViewBag.cum" placeholder="Porcentaje total" readonly class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
